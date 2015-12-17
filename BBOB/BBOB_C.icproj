@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.0"
+	Name="BBOB_C"
+	ProjectGUID="{806A9D72-C857-4E06-88BB-F04DB94C04CF}"
+	VCNestedProjectGUID="{90E803DB-DADB-4936-80F0-D2BE4D93D3F5}"
+	VCNestedProjectFileName="BBOB_C.vcproj">
+	<Configurations/>
+	<Files/>
+</VisualStudioProject>

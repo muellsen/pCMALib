@@ -1,0 +1,50 @@
+#------------------------------------------------------------------------
+# pCMALib: a parallel fortran 90 library for the evolution strategy with
+#          covariance matrix adaptation
+# Christian L. Mueller, Benedikt Baumgartner, Georg Ofenbeck
+# MOSAIC group, ETH Zurich, Switzerland
+#-------------------------------------------------------------------------
+
+# output data is saved into this folder (relative to workdir)
+OUTPUT_FOLDER = rast_ipop_pscma
+# GENERATE GENERAL DATA
+FLGGENDATA = false
+# GENERATE FINAL SUMMARY TXT OUTPUT
+FLGOUTTXT = false
+# GENERATE TRACE OF BESTX AND BESTF
+FLGGENTRACE = true
+# GENERATE TRACE with this interval
+INTGENDATA = 1
+# use the CEC2005 benchmark suite as target function
+USE_CEC = true
+# which function of the CEC2005 (or BBOB) benchmark suite to use
+BENCHFCTNR = 9
+# Dimension of the problem
+DIMENSIONS = 50
+# Upper bounds on all dimensions
+ALLDIM_UBOUNDS = 5
+# Lower bounds on all dimensions
+ALLDIM_LBOUNDS = -5
+# the global optimum (known from Suganthan et al.)
+GLOBAL_MIN = -330
+# Successful run if [f(x)-global_min] < accuracy
+ACCURACY = 1.E-6
+# the folder where to find the supportData folder
+CECFOLDERS = ./
+# Switch PS-CMA-ES on or off
+PSCMA = true
+# Interval length between PSO updates
+PSOFREQ = 200
+# how much the PSO update influences the covariance
+PSOWEIGHT = 0.7
+# STOP AFTER MAXFUNEVALS
+STOPMAXFUNEVALS = 5e5
+# Switch RESTART on or off
+RESTART_CMA = true
+# (0) restart randomly within bounds, (1) restart from point of
+# convergence, (2) restart from same start point all the time
+RESTART_TYPE = 0
+# POPSIZE INCREASE UPON RESTART (1.0 means no increase)
+INCPOPSIZE = 1.0
+# FACTOR FOR UPPER BOUND OF POPSIZE (i.e. MAXINCFAC* initial POPSIZE)
+MAXINCFAC = 20

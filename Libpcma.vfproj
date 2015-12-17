@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{828A1245-70FA-450C-8CDE-FB48546E93D8}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\;D:\CBB\Masterarbeit\MPI\3.2.0.011\ia32\include\" PreprocessorDefinitions="__DP=1;" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="DebugMPI|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\;D:\CBB\Masterarbeit\MPI\3.2.0.011\ia32\include\" PreprocessorDefinitions="__HAVE_MPI__=1;__DP=1;" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\mpi.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64" OutputDirectory="bin\$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="bin\$(PlatformName)\$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\" PreprocessorDefinitions="__DP=1;" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64" OutputDirectory="bin\$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="bin\$(PlatformName)\$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="DebugMPI|x64" OutputDirectory="bin\$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="bin\$(PlatformName)\$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\;D:\CBB\Masterarbeit\MPI\3.2.0.011\ia32\include\;C:\Program Files\MATLAB\R2009a\extern\include;" PreprocessorDefinitions="__HAVE_MPI__=1;__DP=1;" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\mpi64.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" GenerateMapFile="true" MapExports="true" AssemblyDebug="linkAssemblyDebugFull" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug Single Matlab|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\;D:\CBB\Masterarbeit\MPI\3.2.0.011\ia32\include\" PreprocessorDefinitions="__DP=1;" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug Single Matlab|x64" OutputDirectory="bin\$(PlatformName)\$(ConfigurationName)" IntermediateDirectory="bin\$(PlatformName)\$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" HeapArrays="0" Preprocess="preprocessYes" AdditionalIncludeDirectories="libcma\;C:\Program Files\MATLAB\R2009b\extern\include;" PreprocessorDefinitions="__DP=1;__HAVE_MATLAB__=1;" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd">
+		<File RelativePath=".\libcma\define.h"/></Filter>
+		<Filter Name="Libarys">
+		<Filter Name="Debug">
+		<Filter Name="ia32">
+		<Filter Name="LAPACK">
+		<File RelativePath="..\LAPACK\lib\win32\BLASd.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\win32\extrasd.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\win32\LAPACKd.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\win32\MATGENd.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File></Filter>
+		<Filter Name="MPI">
+		<File RelativePath="..\MPI\3.2.0.011\ia32\lib\impid.lib">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|Win32" ExcludedFromBuild="true"/></File></Filter></Filter>
+		<Filter Name="x64">
+		<Filter Name="LAPACK">
+		<Filter Name="INTEL LAPACK">
+		<File RelativePath="..\..\..\..\..\Program Files (x86)\Intel\Compiler\11.1\051\mkl\em64t\lib\mkl_core.lib"/>
+		<File RelativePath="..\..\..\..\..\Program Files (x86)\Intel\Compiler\11.1\051\mkl\em64t\lib\mkl_intel_lp64.lib"/>
+		<File RelativePath="..\..\..\..\..\Program Files (x86)\Intel\Compiler\11.1\051\mkl\em64t\lib\mkl_lapack95_lp64.lib"/>
+		<File RelativePath="..\..\..\..\..\Program Files (x86)\Intel\Compiler\11.1\051\mkl\em64t\lib\mkl_sequential.lib"/></Filter>
+		<Filter Name="OpenLapack">
+		<File RelativePath="..\LAPACK\lib\x64\BLASd.lib">
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\x64\extrasd.lib">
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\x64\LAPACKd.lib">
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\LAPACK\lib\x64\MATGENd.lib">
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File></Filter></Filter>
+		<Filter Name="Matlab">
+		<Filter Name="Matlab 2009b">
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\foundation_util.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libemlrt.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libeng.lib">
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libfixedpoint.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmat.lib">
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmex.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmwmathutil.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmwservices.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmwsl_solver_rtw.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libmx.lib">
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\libut.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\mclcommain.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\mclmcr.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\mclmcrrt.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\ne_mli.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\ne_rtl.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath="..\..\..\..\..\Program Files\MATLAB\R2009b\extern\lib\win64\microsoft\rtwcg.lib">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File></Filter></Filter>
+		<Filter Name="MPI">
+		<File RelativePath="..\MPI\3.2.0.011\em64t\lib\impid.lib">
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File></Filter></Filter></Filter></Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<Filter Name="example_inputs">
+		<File RelativePath=".\example_inputs\rastrigin.txt"/>
+		<File RelativePath=".\example_inputs\water_pcma.txt"/></Filter>
+		<Filter Name="supportData">
+		<File RelativePath=".\libtestfcns\supportData\ackley_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\ackley_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\ackley_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\ackley_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\ackley_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\E_ScafferF6_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\E_ScafferF6_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\E_ScafferF6_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\E_ScafferF6_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\E_ScafferF6_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\EF8F2_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\elliptic_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\elliptic_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\elliptic_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\elliptic_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\fbias_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\Files List and some explaination.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\global_optima.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\griewank_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\griewank_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\griewank_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\griewank_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\griewank_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\high_cond_elliptic_rot_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func1_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func1_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func1_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func1_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func1_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func2_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func2_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func2_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func2_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func2_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_HM_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_HM_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_HM_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_HM_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func3_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func4_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func4_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func4_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func4_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\hybrid_func4_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rastrigin_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rastrigin_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rastrigin_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rastrigin_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rastrigin_M_D50.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\rosenbrock_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\schwefel_102_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\schwefel_206_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\schwefel_213_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\sphere_func_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\weierstrass_data.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\weierstrass_M_D10.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\weierstrass_M_D2.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\weierstrass_M_D30.txt"/>
+		<File RelativePath=".\libtestfcns\supportData\weierstrass_M_D50.txt"/></Filter>
+		<Filter Name="testData">
+		<File RelativePath=".\libtestfcns\testData\test_data_func1.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func10.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func11.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func12.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func13.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func14.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func15.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func16.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func17.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func18.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func19.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func2.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func20.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func21.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func22.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func23.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func24.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func25.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func3.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func4.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func5.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func6.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func7.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func8.txt"/>
+		<File RelativePath=".\libtestfcns\testData\test_data_func9.txt"/></Filter></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="BFGS">
+		<File RelativePath=".\bfgs\lbfgs_nocedal.f"/>
+		<File RelativePath=".\bfgs\lbfgsb_mod.f90"/></Filter>
+		<Filter Name="energy_landscapes">
+		<Filter Name="LJ">
+		<File RelativePath=".\energy_landscapes\LJ\lj.f">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration></File>
+		<File RelativePath=".\energy_landscapes\LJ\LJ_COMP.f90"/>
+		<File RelativePath=".\energy_landscapes\LJ\LJ_POT.f90"/>
+		<File RelativePath=".\energy_landscapes\LJ\lj_writeout.f90"/></Filter>
+		<Filter Name="TIPnP">
+		<File RelativePath=".\energy_landscapes\TIPnP\rigidfuncs.f">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration></File>
+		<File RelativePath=".\energy_landscapes\TIPnP\tip.f">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="Debug Single Matlab|Win32">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration>
+			<FileConfiguration Name="DebugMPI|x64">
+				<Tool Name="VFFortranCompilerTool" FixedFormLineLength="fixedLength132"/></FileConfiguration></File>
+		<File RelativePath=".\energy_landscapes\TIPnP\water_write_out.f90"/></Filter></Filter>
+		<Filter Name="libCMA">
+		<Filter Name="matlab">
+		<File RelativePath=".\libcma\matlab\cma2mat.f90">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\libcma\matlab\matlab_objfunc.f90"/></Filter>
+		<Filter Name="mpi">
+		<File RelativePath=".\libcma\mpi\mpi_mod.f90">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Release|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\libcma\mpi\pso_mod.f90">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\libcma\mpi\psoUpdate.f90">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File></Filter>
+		<File RelativePath=".\libcma\cma.f90"/>
+		<File RelativePath=".\libcma\cmaes_checkparams.f90"/>
+		<File RelativePath=".\libcma\cmaes_freememory.f90"/>
+		<File RelativePath=".\libcma\cmaes_funcwrap.f90"/>
+		<File RelativePath=".\libcma\cmaes_handlebounds.f90"/>
+		<File RelativePath=".\libcma\cmaes_init.f90"/>
+		<File RelativePath=".\libcma\cmaes_initbounds.f90"/>
+		<File RelativePath=".\libcma\cmaes_initoutput.f90"/>
+		<File RelativePath=".\libcma\cmaes_mod.f90"/>
+		<File RelativePath=".\libcma\cmaes_myprctile.f90"/>
+		<File RelativePath=".\libcma\cmaes_opts_mod.f90"/>
+		<File RelativePath=".\libcma\cmaes_out_mod.f90"/>
+		<File RelativePath=".\libcma\cmaes_param_mod.f90"/>
+		<File RelativePath=".\libcma\cmaes_readparams.f90"/>
+		<File RelativePath=".\libcma\cmaes_run.f90"/>
+		<File RelativePath=".\libcma\cmaes_run_mod.f90"/>
+		<File RelativePath=".\libcma\cmaes_start.f90"/>
+		<File RelativePath=".\libcma\cmaes_startpoint.f90"/>
+		<File RelativePath=".\libcma\cmaes_writegen.f90"/>
+		<File RelativePath=".\libcma\cmaes_xintobounds.f90"/>
+		<File RelativePath=".\libcma\tool_create_rotmat.f90"/>
+		<File RelativePath=".\libcma\tool_create_rotmat_mod.f90"/>
+		<File RelativePath=".\libcma\tool_eigendecomp.f90"/>
+		<File RelativePath=".\libcma\tool_eigendecomp_mod.f90"/>
+		<File RelativePath=".\libcma\tool_formatarrays.f90"/>
+		<File RelativePath=".\libcma\tool_mindist2lines.f90"/>
+		<File RelativePath=".\libcma\tool_mrgrnk_mod.f90"/>
+		<File RelativePath=".\libcma\tool_myrange.f90"/>
+		<File RelativePath=".\libcma\tool_realtxt2arr.f90"/>
+		<File RelativePath=".\libcma\tool_symmatrix.f90"/>
+		<File RelativePath=".\libcma\tool_symmatrix_mod.f90"/></Filter>
+		<Filter Name="libtestfcns">
+		<Filter Name="BOBB objects">
+		<File RelativePath=".\BBOB\x64\Debug\benchmarks.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\benchmarksdeclare.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\benchmarkshelper.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\benchmarksnoisy.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\dirOK.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\fgeneric.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File>
+		<File RelativePath=".\BBOB\x64\Debug\init_BBOB.obj">
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File></Filter>
+		<Filter Name="tests">
+		<File RelativePath=".\libtestfcns\tests\Example_CEC2005.f90">
+			<FileConfiguration Name="Debug|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Release|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="Debug Single Matlab|Win32" ExcludedFromBuild="true"/>
+			<FileConfiguration Name="DebugMPI|x64" ExcludedFromBuild="true"/></File></Filter>
+		<File RelativePath=".\libtestfcns\benchmark_bbob.f90"/>
+		<File RelativePath=".\libtestfcns\CEC2005.f90"/>
+		<File RelativePath=".\libtestfcns\double_funnel.f90"/>
+		<File RelativePath=".\libtestfcns\random_landscape.f90"/>
+		<File RelativePath=".\libtestfcns\testCEC2005.f90">
+			<FileConfiguration Name="Debug|x64" ExcludedFromBuild="true"/></File></Filter>
+		<Filter Name="Random Numbers">
+		<File RelativePath=".\librng\faure.f90"/>
+		<File RelativePath=".\librng\halton.f90"/>
+		<File RelativePath=".\librng\kinds.f90"/>
+		<File RelativePath=".\librng\niederreiter2.f90"/>
+		<File RelativePath=".\librng\qr_gen_mod.f90"/>
+		<File RelativePath=".\librng\random_generator.f"/>
+		<File RelativePath=".\librng\rng_halton_sobol_R.f"/>
+		<File RelativePath=".\librng\rng_inversions.f90"/>
+		<File RelativePath=".\librng\sobol.f90"/></Filter></Filter>
+		<File RelativePath=".\make_brutus.inc"/>
+		<File RelativePath=".\makefile"/></Files>
+	<Globals/></VisualStudioProject>

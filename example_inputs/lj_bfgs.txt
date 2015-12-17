@@ -1,0 +1,47 @@
+#------------------------------------------------------------------------
+# pCMALib: a parallel fortran 90 library for the evolution strategy with
+#          covariance matrix adaptation
+# Christian L. Mueller, Benedikt Baumgartner, Georg Ofenbeck
+# MOSAIC group, ETH Zurich, Switzerland
+#-------------------------------------------------------------------------
+
+
+
+# output data is saved into this folder (relative to workdir)
+OUTPUT_FOLDER = LJ_with_BFGS
+# Dimension of the problem
+DIMENSIONS = 108
+# if special bounds should be used for initalization of population
+USE_INIT_BOUNDS = true
+# Upper bounds for initialization
+INIT_UBOUNDS = 1.5
+# Lower bounds for initialization
+INIT_LBOUNDS = -1.5
+# Upper bounds on all dimensions
+ALLDIM_UBOUNDS = 4
+# Lower bounds on all dimensions
+ALLDIM_LBOUNDS = -4
+#the global optimum 
+GLOBAL_MIN = -173.92
+#use the Lennard Jones potential with compression as target function
+USE_LJ = true
+#size of the inital sigma relative to the bounds - only used if ABS_SIGMA is not set
+REL_SIGMA = 0.5
+# the maximum fold increase the population is allowed to grow to compared to
+# the inital population size
+MAXINCSIZE = 10
+# factor by which the population size is increased every restart
+INCPOPSIZE = 1.1
+# Successful run if global_min -f(x) < accuracy
+ACCURACY = 1.E-3
+# if multi restart CMA (IPOP) should be used
+RESTART_CMA = true
+# if BFGS should be used to assist CMA. This is still in development!
+BFGS_USE = true
+# 1 = replace X values by local minimum X\\&& 2 = replace F values with F
+# values at local minimum
+BFGS_POSITION = 1
+# (0) restart randomly within bounds, (1) restart from point of
+# convergence, (2) restart from same startpoint all the time
+RESTART_TYPE = 0
+

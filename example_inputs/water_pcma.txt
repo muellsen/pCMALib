@@ -1,0 +1,28 @@
+#------------------------------------------------------------------------
+# pCMALib: a parallel fortran 90 library for the evolution strategy with
+#          covariance matrix adaptation
+# Christian L. Mueller, Benedikt Baumgartner, Georg Ofenbeck
+# MOSAIC group, ETH Zurich, Switzerland
+#-------------------------------------------------------------------------
+
+# output data is saved into this folder (relative to workdir)
+OUTPUT_FOLDER = water_pscma
+# Dimension of the problem
+DIMENSIONS = 48
+# Upper bounds on all dimensions
+ALLDIM_UBOUNDS = 6
+# Lower bounds on all dimensions
+ALLDIM_LBOUNDS = -6
+#the global optimum
+GLOBAL_MIN = -305.5190
+# use the TIP4P water potential as target function
+USE_TIP = true
+#  the maximum fold increase the population is allowed to grow to compared to
+#  the inital population size
+ACCURACY = 1.E-3
+#Switch PS-CMA-ES on or off
+PSCMA = true
+# Intervall length between PSO updates
+PSOFREQ = 1000
+# how much the PSO update influences the covariance
+PSOWEIGHT = 0.8

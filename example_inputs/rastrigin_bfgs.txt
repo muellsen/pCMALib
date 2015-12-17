@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------
+# pCMALib: a parallel fortran 90 library for the evolution strategy with
+#          covariance matrix adaptation
+# Christian L. Mueller, Benedikt Baumgartner, Georg Ofenbeck
+# MOSAIC group, ETH Zurich, Switzerland
+#-------------------------------------------------------------------------
+
+# output data is saved into this folder (relative to workdir)
+OUTPUT_FOLDER = bfgs_pscma
+# which function of the CEC2005 or BBOB benchmark suite to use
+BENCHFCTNR = 9
+# Dimension of the problem
+DIMENSIONS = 30
+# Upper bounds on all dimensions
+ALLDIM_UBOUNDS = 5
+# Lower bounds on all dimensions
+ALLDIM_LBOUNDS = -5
+#the global optimum
+GLOBAL_MIN = -330
+# use the CEC2005 benchmark suite as target function
+USE_CEC = true
+# Successful run if global_min -f(x) < accuracy
+ACCURACY = 1.E-3
+#the folder where to find the supportData folder
+CECFOLDERS = ./
+# if BFGS should be used to assist CMA. This is still in development!
+BFGS_USE = true
+# 1 = replace X values by local minimum X\\&& 2 = replace F values with F
+# values at local minimum
+BFGS_POSITION = 2
+# if multi restart CMA (IPOP) should be used
+RESTART_CMA = true
+# (0) restart randomly within bounds, (1) restart from point of
+# convergence, (2) restart from same startpoint all the time
+RESTART_TYPE = 0
+VERBOSEMODULO = 1
+#REL_SIGMA = 0.005
+STOPMAXFUNEVALS = 30000
+STOPTOLFUN = 1E-2

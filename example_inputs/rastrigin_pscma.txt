@@ -1,0 +1,31 @@
+#------------------------------------------------------------------------
+# pCMALib: a parallel fortran 90 library for the evolution strategy with
+#          covariance matrix adaptation
+# Christian L. Mueller, Benedikt Baumgartner, Georg Ofenbeck
+# MOSAIC group, ETH Zurich, Switzerland
+#-------------------------------------------------------------------------
+
+# output data is saved into this folder (relative to workdir)
+OUTPUT_FOLDER = rast_pscma
+# which function of the CEC2005 or BBOB benchmark suite to use
+BENCHFCTNR = 9
+# Dimension of the problem
+DIMENSIONS = 10
+# Upper bounds on all dimensions
+ALLDIM_UBOUNDS = 5
+# Lower bounds on all dimensions
+ALLDIM_LBOUNDS = -5
+#the global optimum
+GLOBAL_MIN = -330
+# use the CEC2005 benchmark suite as target function
+USE_CEC = true
+# Successful run if global_min -f(x) < accuracy
+ACCURACY = 1.E-8
+#the folder where to find the supportData folder
+CECFOLDERS = ./
+#Switch PS-CMA-ES on or off
+PSCMA = true
+# Intervall length between PSO updates
+PSOFREQ = 1000
+# how much the PSO update influences the covariance
+PSOWEIGHT = 0.8
